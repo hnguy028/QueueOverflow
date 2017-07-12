@@ -15,4 +15,12 @@ public class Canvas {
 	public void draw() {
 		
 	}
+	
+	public void setGylph(Glyphs _glyph) {
+		this.glyph = _glyph;
+	}
+	
+	public Glyphs getGlyph() {
+		return this.glyph;
+	}
 }
