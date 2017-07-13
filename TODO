@@ -1,0 +1,10 @@
+// To Implement
+
+
+
+Symbol Animation
+Update the coordinates in the actionPerformed() method of the
+javax.swing.timer and invoke repaint()
+(given a list of images in the animation, ie for an idle motion)
+
+

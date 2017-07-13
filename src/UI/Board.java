@@ -13,6 +13,15 @@ public class Board {
 	 * Constructor
 	 */
 	public Board() {
-		
+		canvasIn = new Canvas();
+		canvasOut = new Canvas();
+	}
+	
+	public Canvas getInCanvas() {
+		return canvasIn;
+	}
+	
+	public Canvas getOutCanvas() {
+		return canvasOut;
 	}
 }
