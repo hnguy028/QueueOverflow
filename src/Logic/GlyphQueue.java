@@ -6,10 +6,20 @@ import Symbols.Glyphs;
 /**
  * @author hinguyen
  *
- * The bridge which connects the player's boards contains the symbols that are to be drawn next
+ * This class will contain the connection to the peer, as well as handle network communication 
  */
 public class GlyphQueue {
-	LinkedList<Glyphs> one;
-	LinkedList<Glyphs> two;
+	LinkedList<Glyphs> glyphQueue;
 	
+	public void connect() {
+		
+	}
+	
+	public void sendGlyph(Glyphs g) {
+		// peer.send(g);
+	}
+	
+	public Glyphs pop() {
+		return glyphQueue.pop();
+	}
 }

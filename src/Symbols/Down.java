@@ -1,5 +1,8 @@
 package Symbols;
 
-public class Down {
+public class Down implements Glyphs {
 
+	public void getValue() {
+		
+	}
 }

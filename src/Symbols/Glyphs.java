@@ -1,8 +1,6 @@
 package Symbols;
 
-public class Glyphs {
+public interface Glyphs {
 	
-	public Glyphs() {
-		
-	}
+	public void getValue();
 }

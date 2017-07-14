@@ -1,8 +1,12 @@
 package Symbols;
 
-public class Up extends Glyphs {
+public class Up implements Glyphs {
 	
 	public Up() {
+		
+	}
+	
+	public void getValue() {
 		
 	}
 }
