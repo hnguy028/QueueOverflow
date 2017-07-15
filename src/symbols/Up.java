@@ -1,4 +1,4 @@
-package Symbols;
+package symbols;
 
 public class Up implements Glyphs {
 	

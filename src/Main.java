@@ -1,4 +1,4 @@
-import UI.Window;
+import ui.Window;
 
 public class Main {
 	
