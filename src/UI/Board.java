@@ -2,9 +2,12 @@ package UI;
 
 import javax.swing.JPanel;
 
+import Logic.GlyphQueue;
+
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
+import java.awt.GridLayout;
 
 /**
  * @author hinguyen
@@ -17,25 +20,21 @@ public class Board extends JPanel {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private Dimension dimensions;
-	private int x, y, height, width;
+	private int length;
 	private Canvas canvasIn;
 	private Canvas canvasOut;
 	
 	/**
 	 * Constructor
 	 */
-	public Board(Dimension _boardDimensions, double xPadding, double yPadding, double _glyphPadding) {
-		this.dimensions = _boardDimensions;
-		this.x = (int) (dimensions.getWidth() * xPadding);
-		this.y = (int) (dimensions.getHeight() * yPadding);
-		this.width = (int) (dimensions.getWidth() - (4 * this.x));
-		this.height = (int) (dimensions.getHeight() - (2 * this.y));
+	public Board(int _length, GlyphQueue q) {
+		this.length = _length;
 		
-		Dimension canvasDimension = new Dimension(width / 2, height);
+		setBackground(Color.BLACK);
+		setLayout(new GridLayout(1,length));
 		
-		canvasIn = new Canvas(Color.BLACK, canvasDimension, x, y, _glyphPadding);
-		canvasOut = new Canvas(Color.BLACK, canvasDimension, (int) ((dimensions.getWidth() / 2) + x), y, _glyphPadding);
+		canvasIn = new Canvas(Color.BLUE, q.popTest()+"");
+		canvasOut = new Canvas(Color.RED, q.popTest()+"");
 		
 		add(canvasIn);
 		add(canvasOut);
@@ -44,7 +43,6 @@ public class Board extends JPanel {
 	@Override
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
-		g.fillRect(0,0,width,height);
 	}
 	
 	public Canvas getInCanvas() {
