@@ -2,7 +2,7 @@ package ui;
 
 import javax.swing.JPanel;
 
-import Logic.GlyphQueue;
+import logic.GlyphQueue;
 
 import java.awt.Color;
 import java.awt.Dimension;

@@ -9,7 +9,7 @@ import java.awt.event.KeyListener;
 
 import javax.swing.JFrame;
 
-import Logic.GlyphQueue;
+import logic.GlyphQueue;
 
 /**
  * @author hinguyen
