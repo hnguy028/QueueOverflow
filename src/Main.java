@@ -1,4 +1,4 @@
-import UI.Window;
+import ui.Window;
 
 public class Main {
 	
@@ -13,11 +13,27 @@ public class Main {
 		
 		char t = (char) 122;
 		System.out.println(t);
+		// loop to attempt connection to server/peer
+		
+		// initialization sequence
+		
+		// each user will begin with 3 rng generated symbols in the queue
+		// begin sending and receiving symbols over the network
 		
 		// Game loop
 		while(true) {
+			// check exit sequence (connection interrupt, application close, end game, score cap, etc)
 			
+			// get next symbol from glyphQueue
+			// get users reply to input stream
+			// check for match
+			// score calculation
+			
+			// get users reply to output stream
+			// check symbol validity
+			// send glyph code over p2p connection
 		}
+		
+		// game over sequence
 	}
-	
 }

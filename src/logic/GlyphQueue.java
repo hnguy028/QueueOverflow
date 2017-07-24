@@ -1,7 +1,8 @@
 package Logic;
 
 import java.util.LinkedList;
-import Symbols.Glyphs;
+
+import symbols.Glyphs;
 
 /**
  * @author hinguyen

@@ -1,11 +1,12 @@
-package UI;
+package ui;
 
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 
 import javax.swing.*;
-import Symbols.Glyphs;
+
+import symbols.Glyphs;
 
 /**
  * @author hinguyen
